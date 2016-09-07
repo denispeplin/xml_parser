@@ -28,7 +28,8 @@ defmodule XmlParser.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:quinn, "~> 1.0.0"}
+      {:quinn, "~> 1.0.0"},
+      {:credo, "~> 0.4", only: [:dev, :test]}
     ]
   end
 end

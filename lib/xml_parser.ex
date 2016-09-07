@@ -14,7 +14,8 @@ defmodule XmlParser do
       {:person, %{id: "12345"}, [{:first, nil, "Josh"}, {:last, nil, "Nussbaum"}]}
   """
   def parse(xml) do
-    Quinn.parse(xml)
+    xml
+    |> Quinn.parse
     |> List.first
     |> quinn2xml_parser
   end
