@@ -23,6 +23,9 @@ defmodule XmlParser do
     |> quinn2xml_parser
   end
 
+  defp quinn2xml_parser(%{attr: attr, name: name, value: []}) do
+    {name, parse_attr(attr), ""}
+  end
   defp quinn2xml_parser(%{attr: attr, name: name, value: value}) do
     {name, parse_attr(attr), quinn2xml_parser(value)}
   end

@@ -12,6 +12,14 @@ defmodule XmlParserTest do
       assert parse(xml) == data
     end
 
+    test "single element with empty attribute" do
+      xml = ~S"""
+      <person id="12345"></person>
+      """
+      data = {:person, %{id: "12345"}, ""}
+      assert parse(xml) == data
+    end
+
     test "sibling elements with attributes" do
       xml = ~S"""
       <parent>
