@@ -32,7 +32,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 ## Usage
 
-```
+```elixir
 xml = "<person id=\"12345\"><first>Josh</first><last>Nussbaum</last></person>"
 data = XmlParser.parse xml
 # {:person, %{id: 12345}, [{:first, nil, "Josh"}, {:last, nil, "Nussbaum"}]}
