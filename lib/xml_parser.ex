@@ -13,6 +13,7 @@ defmodule XmlParser do
       ...> XmlParser.parse xml
       {:person, %{id: "12345"}, [{:first, nil, "Josh"}, {:last, nil, "Nussbaum"}]}
   """
+  @spec parse(binary) :: binary
   def parse(xml) do
     xml
     |> Quinn.parse
