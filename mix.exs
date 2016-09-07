@@ -7,6 +7,12 @@ defmodule XmlParser.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     package: [
+       maintainers: ["Denis Peplin"],
+       licenses: ["MIT"],
+       links: %{github: "https://github.com/denispeplin/xml_parser"}
+     ],
+     description: "Transforming XML into format that can be consumed by XmlBuider",
      deps: deps()]
   end
 
