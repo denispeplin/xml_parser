@@ -49,6 +49,7 @@ have only one root element.
 ```xml
 <good>
   <data>Data!</data>
+  <data>More data!</data>
 </good>
 ```
 
