@@ -41,6 +41,8 @@ XmlBuilder.build data
 # <person id="12345"><first>Josh</first><last>Nussbaum</last></person>
 ```
 
+[Documentation](https://hexdocs.pm/xml_parser/0.1.0/XmlParser.html) is also available.
+
 ## Gotchas
 
 `Quinn` can't parse XML with siblings on the top level of a document, so XML document must
