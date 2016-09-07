@@ -10,8 +10,10 @@ defmodule XmlParser do
 
   ## Example
       iex> xml = "<person id=\"12345\"><first>Josh</first><last>Nussbaum</last></person>"
-      ...> XmlParser.parse xml
+      ...> data = XmlParser.parse xml
       {:person, %{id: "12345"}, [{:first, nil, "Josh"}, {:last, nil, "Nussbaum"}]}
+      ...> XmlBuilder.generate data
+      "<person id=\"12345\">\n\t<first>Josh</first>\n\t<last>Nussbaum</last>\n</person>"
   """
   @spec parse(binary) :: binary
   def parse(xml) do
