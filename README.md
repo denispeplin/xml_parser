@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/denispeplin/xml_parser.svg?branch=master)](https://travis-ci.org/denispeplin/xml_parser)
+[![Hex Version](https://img.shields.io/hexpm/v/xml_parser.svg)](https://hex.pm/packages/xml_parser)
 
 # XmlParser
 
